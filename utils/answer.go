@@ -19,10 +19,10 @@ func Answer(rtm *slack.RTM, msg *slack.MessageEvent, prefix string) {
 		rsp = "I don't think that's a Cryptocurrency try something along the lines of 'BTC' or 'ETH'"
 		rtm.SendMessage(rtm.NewOutgoingMessage(rsp, msg.Channel))
 	} else if txt == "help" {
-		rsp = "Hey There, I'm CryptoBot a nice .. Bot. You can tag me on any channel and add a cryptocurrency symbol and I'll get you the rates. Try me, I'm the best at what I do."
+		rsp = "Hey There, I'm CryptoBot a nice .. Bot. You can tag me on any channel and add a cryptocurrency symbol and I'll get you the prices. Try me, I'm the best at what I do."
 		rtm.SendMessage(rtm.NewOutgoingMessage(rsp, msg.Channel))
 	} else {
 		resp := handlers.GetCurrency(txt)
-		rtm.SendMessage(rtm.NewOutgoingMessage(txt+" is estimated at "+resp+" $", msg.Channel))
+		rtm.SendMessage(rtm.NewOutgoingMessage(txt+" sells for "+resp+" $", msg.Channel))
 	}
 }
