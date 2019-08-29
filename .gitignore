@@ -1,1 +1,5 @@
+#Folders
 vendor/
+
+#files
+.DS_Store
