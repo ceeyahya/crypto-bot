@@ -8,4 +8,5 @@ CryptoBot is an RTM bot so all you have to do is add him in your workspace, tag 
  - help : just displays a hello and description message
  - cryptocurrency symbol (e.g ETH) : will display the rate of that cryptocurrency
 
+# Example
 ![](cryptobot.gif)
