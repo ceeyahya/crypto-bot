@@ -16,7 +16,7 @@ func floatToString(n float64) string {
 
 // GetCurrency handles the sent message and makes API calls
 func GetCurrency(symbol string) string {
-	req := "http://api.coinlayer.com/api/live?access_key=26bf59d11a750f73ee6f72c88f0ae043&symbols="
+	req := "http://api.coinlayer.com/api/live?access_key=YOURTOKENHERE&symbols="
 	resp, err := http.Get(req + symbol)
 	if err != nil {
 		fmt.Printf("Request Failed: %s", err)

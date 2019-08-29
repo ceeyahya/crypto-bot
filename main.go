@@ -12,7 +12,7 @@ import (
 
 func main() {
 	api := slack.New(
-		"xoxb-730854609473-739104563735-0zwrWCG6HGlWlXNj9Jc770LC",
+		"YOUR TOKEN HERE",
 		slack.OptionDebug(true),
 		slack.OptionLog(log.New(os.Stdout, "crypto-bot: ", log.Lshortfile|log.LstdFlags)),
 	)
